@@ -16,7 +16,7 @@ CSS設計 sass FLOCSS
 
 画像登録機能(vue.js)
 
-vue.jsコンポーネント、axios使用
+header、footerなどコンポーネント化、axios使用
 
 パンくずリスト使用
 
