@@ -1,5 +1,8 @@
 This is a diary posting service developed with laravel and vue.js(日記投稿サービス laravel vue.js使用)
 
+npm、laravel-mix使用
+
+CSS設計 sass FLOCSS
 
 認証機能(ログイン、ログアウト)
 
@@ -12,8 +15,6 @@ This is a diary posting service developed with laravel and vue.js(日記投稿�
 ページネーション機能
 
 画像登録機能(vue.js)
-
-sass FLOCSS
 
 vue.jsコンポーネント、axios使用
 
