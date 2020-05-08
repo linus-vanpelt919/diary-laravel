@@ -1,0 +1,99 @@
+/* ---------------------------------
+p-form projectに普通のcssを書く
+--------------------------------- */
+.p-form{
+    &--choice{
+        text-align: center;
+        color: #eee;
+        padding-top: 4.0rem;
+    }
+    &__title{
+        text-align: center;
+        @include mq(){
+            font-size: 2.0rem;
+            margin-bottom: 10%;
+        }
+        &--menu{
+            margin-bottom: 30px;
+            font-size: 20px;
+            color: #a6cccc;
+            text-align: center;
+        }
+            }
+        &__container{
+            width: 50%;
+            margin: 4.0rem auto;
+            padding: 3.0rem;
+            box-sizing: border-box;
+            background: #b5ceff;
+            @include mq(){
+                //height: 45em;
+                width:100%;
+                padding: 1.5rem;
+            }
+        }
+    &__inside{
+            width: 300px;
+            margin: 0 auto;
+    }
+    &__pic{
+        display: none;
+        &-prev{
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &--type{
+            position: relative;
+            //margin: 0 auto;
+            width: 300px;
+            height: 200px;
+            background-image:url('/webukatu/laravel_prac/matching/public/images/sample-img.png');
+            background-position: center;//相対パスを使いたい
+            &:hover{
+                cursor: pointer;
+                background: #5f84dc36;
+                transition: 0.3s ease-out;
+                opacity: 0.9;
+            }
+        }
+    }
+    &__reminder{
+        margin-bottom: 2.0rem;
+        @include mq(){
+            //margin-bottom: 10%;
+        }
+        &--msg{
+            @include mq(){
+
+            }
+        }
+    }
+    &__btn{
+        text-align: center;
+        @include mq(){
+            //text-align: center;
+        }
+    }
+    &--msg{
+        margin-left: 3.3rem;
+        font-size: 1.5rem;
+        @include mq(){
+            font-size: 1.2rem;
+        }
+    }
+    &__category{
+
+        &-select{
+            display: block;
+            margin-bottom: 2.0rem;
+            background: white;
+            border: none;
+            height: 3rem;
+           }
+        }
+
+    }
+

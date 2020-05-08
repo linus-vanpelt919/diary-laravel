@@ -1,0 +1,21 @@
+/* ---------------------------------
+mixin
+--------------------------------- */
+$breakpoints: (
+    'xs': 'screen and (max-width: 320px)',
+    'sm': 'screen and (max-width: 450px)',
+    'md': 'screen and (max-width: 768px)',//ipad
+    'lg': 'screen and (max-width: 1138px)',
+    'xl': 'screen and (max-width: 1180px)',
+) !default;
+
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+@mixin fontsizeVw($size) {
+    $winW: 768; // 画面幅を設定する
+    font-size: ($size / $winW) * 100 + vw;
+}

@@ -1,0 +1,54 @@
+//// Fonts
+//@import url('https://fonts.googleapis.com/css?family=Nunito');
+//
+//// Variables
+//@import 'variables';
+//
+//// Bootstrap
+//@import '~bootstrap/scss/bootstrap';
+//おそらくいらない
+
+
+// ==========================================================================
+// Foundation ここだけは順番が重要なので個別に指定する
+// ==========================================================================
+@import "foundation/_reset";
+@import "foundation/_variables";
+@import "foundation/_mixin";
+@import "foundation/_base";
+
+// ==========================================================================
+// Layout
+// ==========================================================================
+@import "layout/**/*";
+
+//@import "layout/_footer";
+//@import "layout/_header";
+//@import "layout/_main";
+
+// ==========================================================================
+// Object
+// ==========================================================================
+
+// -----------------------------------------------------------------
+// Component
+// -----------------------------------------------------------------
+@import "object/component/**/*";
+
+//@import "object/component/_form";
+//@import "object/component/_button";
+
+// -----------------------------------------------------------------
+// Project
+// -----------------------------------------------------------------
+@import "object/project/**/*";
+
+//@import "object/project/_form";
+//@import "object/project/_footer";
+//@import "object/project/_header";
+//@import "object/project/_main";
+
+// -----------------------------------------------------------------
+// Utility
+// -----------------------------------------------------------------
+@import "object/utility/**/*";

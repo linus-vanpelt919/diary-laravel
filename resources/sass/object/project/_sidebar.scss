@@ -1,0 +1,50 @@
+/* ---------------------------------
+p-sidebar サイドバー
+--------------------------------- */
+.p-sidebar{
+    &__title{
+        color: #7b9bb7;
+        font-size: 2.0rem;
+        text-align: center;
+        padding: 1.0rem;
+    }
+    &__name{
+        color: #7b9bb7;
+        font-size: 1.7rem;
+        margin-left: 1.0rem;
+        padding: 1.0rem;
+    }
+    &__list{
+        margin-top: 2.0rem;
+        &--item{
+            font-size: 2.0rem;
+            margin-left: 3.0rem;
+            margin-bottom: 2.0rem;
+            & a{
+                color:#a6cccc;
+                &:hover{
+                    color: #6cb2eb;
+                }
+            }
+        }
+    }
+    &__search{
+        background: #efeeea;
+        font-size: 1.2rem;
+        width: 12.0rem;
+        margin-left: 5.0rem;
+        margin-bottom: 3.0rem;
+        margin-top: 3.0rem;
+        &-btn{
+            text-align: right;
+            margin-right: 3.0rem;
+            margin-bottom: 3.0rem;
+        }
+        &--select{
+            border: 1px solid #7b9bb7;
+            width: 12.0rem;
+            height: 4.0rem;
+            color: #7b9bb7;
+        }
+    }
+}

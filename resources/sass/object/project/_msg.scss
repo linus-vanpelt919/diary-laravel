@@ -1,0 +1,28 @@
+/* ---------------------------------
+p-message セッションメッセージ
+--------------------------------- */
+.p-message{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 60px;
+    opacity: 0;
+    transition: all 3s;
+    &__suc{
+        background: rgba(51,221,255,0.2);
+        color: #1a9be8;
+
+    }
+    &__err{
+        background: rgba(255,75,69,0.2);
+        color: #dc1515;
+
+    }
+    &.is-msg{
+        //opacity: 1;
+
+    }
+}

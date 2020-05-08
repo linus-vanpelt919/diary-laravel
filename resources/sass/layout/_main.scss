@@ -1,0 +1,73 @@
+/* ---------------------------------
+main
+--------------------------------- */
+
+.l-main{
+        width: 100%;
+    &-base{
+        background: #fff;
+    }
+    &__inner{
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+}
+//flex
+.l-flex{
+    display: -webkit-flex;
+    display: flex;
+
+}
+
+.l-form{
+    &-group{
+
+    }
+}
+
+.styleA{
+    border:3px dotted gray;
+}
+.styleB{
+    border:3px dotted rgba(0,200,0,0.7);
+}
+.button{
+    //border:1px solid green;
+    //padding:3px;
+    border-radius:5px;
+    background-color:white;
+}
+//.button span{
+//    color:green;
+//    margin-top:10px;
+//    margin-left:10px;
+//    margin-right: 10px;
+//}
+
+.commonStyle{
+    border: 3px solid #7e847e;
+    //min-height: 100px;
+    width: 300px;
+    height: 200px;
+    margin: 30px auto;
+}
+.test2{
+    position: relative;
+    //width: 250px;
+    min-height: 200px;
+    background: #bdbdbd85;
+    line-height: 60px;
+    background-image: url("/webukatu/laravel_prac/matching/public/img/unset-icon.png");
+    background-size: 230px;
+    background-position: 50% 100%;
+}
+.img-text{
+    text-align: center;
+}
+.img-prev{
+    //display:block !important;
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 0;
+}

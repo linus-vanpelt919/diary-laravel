@@ -1,0 +1,66 @@
+/* ---------------------------------
+p-flex 2カラム 3カラム
+--------------------------------- */
+.p-flex{
+    display: flex;
+    width: 100%;
+    margin-bottom: 8.0rem;
+    @include mq(sm){//タブレットは2カラムでいい？
+        flex-direction: column;
+    }
+    &__space{
+        justify-content: space-between;
+    }
+    &__left-size{
+        width: 65%;
+        @include mq(sm){
+            width: 100%;
+        }
+    }
+    &__right-size{
+        width: 30%;
+        @include mq(sm){
+            width: 100%;
+        }
+    }
+    &__2col{
+        &--left{
+            flex: 3;
+            order: 1;
+            background: #f4fcff;
+            min-height: 60.0rem;
+        }
+        &--right{
+            flex: 1;
+            order: 2;
+            background: #efeeea;
+            min-height: 50.0rem;
+        }
+    }
+    &__3col{
+        &--left{
+            flex: 1;
+            border: 1px solid blue;
+            background: #59adf7;
+            height: 50.0rem;
+            order: 1;
+        }
+        &--middle{
+            margin: 0 10px;
+            -webkit-flex: 2;
+            flex: 1;
+            border: 1px solid pink;
+            background: silver;
+            height: 50.0rem;
+            order: 2;
+        }
+        &--right{
+            -webkit-flex: 1;
+            flex: 1;
+            border: 1px solid gold;
+            background: orange;
+            height: 50.0rem;
+            order: 3;
+        }
+    }
+}

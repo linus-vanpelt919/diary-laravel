@@ -1,0 +1,32 @@
+/* ---------------------------------
+c-button componentは共通style部分
+--------------------------------- */
+.c-btn{
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    @include mq(){
+        //width: 70%;
+        //height: 15vh;
+        @include mq(sm){
+            //height: 10vh;
+        }
+    }
+
+    &:hover{
+        background: #6cb2eb;
+    }
+    &__article{
+        font-size: 16px;
+        padding: 5px 15px;
+        background-color: #28448e;
+        color: #fff;
+        border-radius: 3px;
+        box-shadow: 0 2px 5px #999;
+        border: none;
+        cursor: pointer;
+        &:hover{
+            background:#4b6cc3;
+        }
+    }
+}
